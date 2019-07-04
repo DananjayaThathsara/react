@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function test(name,age){
-return <div>
-<h1>My Name is {name}</h1>
-<h2>My Age is {age}</h2>
-</div>
-}
-
-ReactDOM.render(
-  test('dana','25'),document.getElementById('root')
-);
+setInterval(function () {
+  function clock() {
+    return <h3>Now Time is : {new Date().toLocaleTimeString()}</h3>
+  }
+  ReactDOM.render(
+    clock(),document.getElementById('root')
+  );
+},1000)
