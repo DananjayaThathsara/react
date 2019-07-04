@@ -1,6 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+function test(name,age){
+return <div>
+<h1>My Name is {name}</h1>
+<h2>My Age is {age}</h2>
+</div>
+}
+
 ReactDOM.render(
-  <h1>Hi my name is,Hi my name is</h1>,document.getElementById('root')
+  test('dana','25'),document.getElementById('root')
 );
